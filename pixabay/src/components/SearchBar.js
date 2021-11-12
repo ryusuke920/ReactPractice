@@ -9,7 +9,8 @@ const SearchBar = ({ onSubmit }) => {
     };
 
     return (
-        <form onSubmit={onFormSubmit} className="ui form">
+        <div className='ui segment'>
+            <form onSubmit={onFormSubmit} className="ui form">
             <div className="field">
                 <label>Image Search</label>
                 <input type="text" name="search" placeholder="" value={term}
@@ -17,7 +18,8 @@ const SearchBar = ({ onSubmit }) => {
                         setTerm(event.target.value)}}
                 />
             </div>
-        </form>
+            </form>
+        </div>
     );
 };
 
